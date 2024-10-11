@@ -16,7 +16,7 @@ From the **Select Service** dropdown, you can choose two options.
 
 ![submit input path](./images/submit_input_path.png)
 
-After selecting the service type, you will be prompted to enter the folder path to input images. The expected structure of the input folder is as below
+After selecting the service type, you will be prompted to browse the folder path to input images. The expected structure of the input folder is as below
 
 ![image](./images/plants_folder_edited.png)
 
@@ -72,10 +72,7 @@ Enter the folder path to which you want the results to be saved and click **Save
 
 ![image](./images/enter_save_path.png)
 
-You will be prompted with a text box acknowledging that results are saved.
-
-![image](./images/result_saved.png)
-
+You will be prompted with a text box with path acknowledging that results are saved in particular path.
 
 ### Clear and Refresh
 
