@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="shortcut icon" href="../img/favicon.ico" />
+    <title>Usage - Plant Phenotyping Analysis AVLL Documentation</title>
+    <link rel="stylesheet" href="../css/theme.css" />
+    <link rel="stylesheet" href="../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
+        <link href="../assets/_mkdocstrings.css" rel="stylesheet" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "Usage";
+        var mkdocs_page_input_path = "usage.md";
+        var mkdocs_page_url = null;
+      </script>
+    
+    <!--[if lt IE 9]>
+      <script src="../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+      <script>hljs.highlightAll();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href=".." class="icon icon-home"> Plant Phenotyping Analysis AVLL Documentation
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="..">Home</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../installation/">Installation</a>
+                </li>
+              </ul>
+              <ul class="current">
+                <li class="toctree-l1 current"><a class="reference internal current" href="#">Usage</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#select-service-type-and-submit-request">Select Service Type and Submit Request</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#plant-analysis">Plant Analysis</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#save-result">Save Result</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#clear-and-refresh">Clear and Refresh</a>
+    </li>
+    </ul>
+                </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Images</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../images/sample/">Sample</a>
+                  </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="..">Plant Phenotyping Analysis AVLL Documentation</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href=".." class="icon icon-home" aria-label="Docs"></a></li>
+      <li class="breadcrumb-item active">Usage</li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h2 id="welcome-to-the-usage-guide-to-the-plant-phenotyping-gui">Welcome to the Usage guide to the Plant Phenotyping GUI</h2>
+<p>Check out the installation guide at <a href="../installation/">installation</a></p>
+<p>Upon launching the GUI, click the generated link or paste the link into your browser. The page will be as below:</p>
+<p><img alt="fresh" src="../images/fresh.png" /></p>
+<h3 id="select-service-type-and-submit-request">Select Service Type and Submit Request</h3>
+<p>From the <strong>Select Service</strong> dropdown, you can choose two options.</p>
+<ul>
+<li><em>Single Plant Analysis</em> will analyze images of a single plant and generate features and statistics of that plant</li>
+<li><em>Multi Plant Analysis</em> will analyze images of multiple plants at once and give a comparison of plant statistics across all plants. This option is chosen by default if not selected.</li>
+</ul>
+<p><img alt="submit input path" src="../images/submit_input_path.png" /></p>
+<p>After selecting the service type, you will be prompted to browse the folder path to input images. The expected structure of the input folder is as below</p>
+<p><img alt="image" src="../images/plants_folder_edited.png" /></p>
+<p>Here, raw images of each plant are separated into different folders. Image names of a plant in its folder should be named in sorted order so that the order can be used to stitch the images later to generate a single stitched image per plant.</p>
+<p><img alt="image" src="../images/plant_folder.png" /></p>
+<p>If the selected service type is <em>Single Plant Analysis</em>, enter the folder path of one plant that contains its images. For <em>Multi Plant Analysis</em>, enter the path to the directory containing multiple plant directories as shown above.</p>
+<p>After entering the folder path, you can click <strong>Submit Input Folder Path</strong> and you will be asked to choose some options to display additional images in the analysis.</p>
+<p><img alt="image" src="../images/output_options.png" /></p>
+<p><em>Show Raw Images</em> will display the input raw images. <em>Show Color Images</em> will display the input images after converting them to color. These options can be used for inspection if necessary.</p>
+<p>Upon choosing options, click <strong>Submit</strong> which submits the request to the host server. A textbox will be displayed saying the number of plants being analyzed.</p>
+<p><img alt="image" src="../images/submit_request.png" /></p>
+<h3 id="plant-analysis">Plant Analysis</h3>
+<p>After the host server analyzes the Plants, It will display the summary of plant statistics</p>
+<p><img alt="image" src="../images/request_processed.png" /></p>
+<p>In the below plot, you can check the comparison of estimated plant heights</p>
+<p><img alt="image" src="../images/statistics_plot_edited.png" /></p>
+<p>From the <strong>Select Plant</strong> dropdown, you can select the plant name to show plant analysis. Plant analysis has 2 tabs by default. If the <em>Show Raw Images</em> or <em>Show Color Images</em> options are chosen before, additional tabs will be displayed accordingly. In this case, as we chose both options, 4 tabs are displayed.</p>
+<ul>
+<li><em>Raw Input Images</em> displays the input images to the pipeline</li>
+</ul>
+<p><img alt="image" src="../images/input_images_tab.png" /></p>
+<ul>
+<li><em>Color Images</em> displays images after converting to color</li>
+</ul>
+<p><img alt="image" src="../images/color_images_tab.png" /></p>
+<ul>
+<li><em>Plant Analysis</em> contains the extracted plant features</li>
+</ul>
+<p><img alt="image" src="../images/plant_analysis_tab.png" /></p>
+<ul>
+<li><em>Plant Statistics</em> shows the estimated plant statistics</li>
+</ul>
+<p><img alt="image" src="../images/plant_statistics_tab.png" /></p>
+<h3 id="save-result">Save Result</h3>
+<p>Enter the folder path to which you want the results to be saved and click <strong>Save Results</strong></p>
+<p><img alt="image" src="../images/enter_save_path.png" /></p>
+<p>You will be prompted with a text box with path acknowledging that results are saved in particular path.</p>
+<h3 id="clear-and-refresh">Clear and Refresh</h3>
+<p>To clear the result and start fresh again, click the <strong>clear</strong> button at the end. Alternatively, at any stage, you can also <strong>refresh</strong> the webpage to start fresh again</p>
+              
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href="../installation/" class="btn btn-neutral float-left" title="Installation"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../images/sample/" class="btn btn-neutral float-right" title="Sample">Next <span class="icon icon-circle-arrow-right"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+      <span><a href="../installation/" style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+      <span><a href="../images/sample/" style="color: #fcfcfc">Next &raquo;</a></span>
+    
+  </span>
+</div>
+    <script src="../js/jquery-3.6.0.min.js"></script>
+    <script>var base_url = "..";</script>
+    <script src="../js/theme_extra.js"></script>
+    <script src="../js/theme.js"></script>
+      <script src="../search/main.js"></script>
+    <script>
+        jQuery(function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        });
+    </script>
+
+</body>
+</html>
